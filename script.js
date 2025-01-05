@@ -1,15 +1,16 @@
 const titles = [
-    " kE5wgo",
-    " BryEvo",
-    " CrcBtoB",
-    " k1yptoB",
-    " krypto",
-    " kryptoD",
-    " kripto",
-    " fyptol",
-    " drypto",
-    " DZYxtee",
-    " krypt7o"
+    "kE5wgo",
+    "BryEvo",
+    "CrcBtoB",
+    "k1yptoB",
+    "krypto",
+    "kryptoD",
+    "kripto",
+    "fyptol",
+    "drypto",
+    "5eyrpt",
+    "DZYxtee",
+    "krypt7o"
 ];
 
 setInterval(() => {
