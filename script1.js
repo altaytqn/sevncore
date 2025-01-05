@@ -15,4 +15,4 @@ const titles = [
 setInterval(() => {
     const randomIndex = Math.floor(Math.random() * titles.length);
     document.title = titles[randomIndex];
-}, 700);
+}, 300);
