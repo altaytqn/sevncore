@@ -1,0 +1,150 @@
+/* Custom selection color */
+::selection {
+    background: rgba(139, 92, 246, 0.3);
+    color: #fff;
+}
+
+::-moz-selection {
+    background: rgba(139, 92, 246, 0.3);
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.content-box {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 20px 60px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    width: 90%;
+    max-width: 800px;
+    box-sizing: border-box;
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+}
+
+.tux {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.console-text {
+    color: #8b5cf6;
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 10px 0;
+    font-size: 1.2em;
+    word-wrap: break-word;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    margin: 12px 0;
+    flex-wrap: wrap;
+}
+
+.social-button {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.social-button:hover {
+    transform: scale(1.1);
+}
+
+.social-button img {
+    width: 28px;
+    height: 28px;
+    filter: invert(1);
+}
+
+.projects-button {
+    display: inline-block;
+    padding: 12px 35px;
+    background: rgba(109, 40, 217, 0.2);
+    border: 1px solid rgba(109, 40, 217, 0.3);
+    border-radius: 8px;
+    color: #6d28d9;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+    margin-top: 12px;
+}
+
+.projects-button:hover {
+    transform: scale(1.05);
+}
+
+.copyright {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    color: #8b5cf6;
+    font-size: 0.9em;
+    z-index: 2;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .content-box {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .tux {
+        width: 60px;
+        height: 60px;
+    }
+
+    .console-text {
+        font-size: 1em;
+    }
+
+    .social-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-button img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .projects-button {
+        padding: 10px 30px;
+        font-size: 1.1em;
+    }
+
+    .copyright {
+        font-size: 0.8em;
+        bottom: 10px;
+        left: 10px;
+    }
+}
